@@ -1,0 +1,9 @@
+[
+  {
+    "name": "ROM",
+    "size": 4095,
+    "readonly": false,
+    "persistent": false,
+    "stateFile": "ROM.mem"
+  }
+]

@@ -1,0 +1,9 @@
+[
+  {
+    "name": "someName",
+    "size": 235000,
+    "readonly": false,
+    "persistent": true,
+    "stateFile": "some/file.mem"
+  }
+]
