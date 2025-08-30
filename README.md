@@ -53,9 +53,9 @@ You can specify for each memory section:
 - if the state of the memory is to be saved between executions
 - the state file that holds the memory content at startup, and to which to save when execution stop
 
-> ⚠️ The state file must be in binary format, including a header:\
+> ⚠️ The state file must be in binary format, including a header:
 > - the first byte must be the byte encoding
-> - the next 4 bytes must be the amount of value contained in the file
+> - the next 4 bytes must be the amount of values contained in the file
 >   - amount of values = bytes / byte encoding
 
 ### Binary format
@@ -63,8 +63,8 @@ You can specify for each memory section:
 When the processor reads the binary loaded in its memory, \
 it starts at address **0x19 (25)**, and will read 3 addresses to get the opcode, and it's 2 parameters, like so:
 
-| ... | 0x18  | 0x19   | 0x21 | 0x22 | 0x23  | ... |
-|------|-------|--------|------|------|-------|------|
+| ... | 0x18  | 0x19   | 0x1a   | 0x1b   | 0x1c  | ... |
+|------|-------|--------|--------|--------|-------|------|
 | ... | 0x... | 0x8080 | 0x0002 | 0x0001 | 0x... | ... |
 
 In this case, it would read:
